@@ -9,10 +9,6 @@ import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
  * 偶数位 8 6 4 2
  * 结果 1 2 3 4 5 6 7 8 9
  * 时间复杂度O（n）
- * @ClassName: Question1
- * @Author: yuexx
- * @Date: 2019/4/8 15:14
- * @Version: 1.0
  */
 public class Question1 {
     /**
