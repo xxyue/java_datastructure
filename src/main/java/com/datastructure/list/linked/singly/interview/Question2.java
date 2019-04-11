@@ -1,37 +1,43 @@
-package main.java.com.datastructure.list.linked.singly.example;
+package main.java.com.datastructure.list.linked.singly.interview;
 
 import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
 
 /**
- * @Description: 单向链表 实例操作
- * @ClassName: SinglyLinkedList
- * @Author: yuexx
- * @Date: 2019/4/4 9:31
- * @Version: 1.0
+ * @Description: 面试真题  单链表归并排序
+ *          8 4 5 7 1 3 6 2
+ *          先拆分 然后再治理
+ *    过程：
+ *          84571362
+ *          8457 1362
+ *          84 57 13 62
+ *          8 4 5 7 1 3 6 2
+ *          48 57 13 26
+ *          4578 1236
+ *          123456789
+ * 时间复杂度 log2n
  */
-public class SinglyLinkedListUtile0 {
-
-
+public class Question2 {
     /**
-     * 翻转链表
-     * 0.  放入栈中，然后再一次弹出
-     * 1.  时间复杂度： O(n)   空间复杂度O(1)
+     * 分成四部
+     *  1.将待排序的数组（链表）去重点并一份为二（使用快慢指针 快指针一次两步，满指针一次走一步，快指针在链表末尾，慢指针敲好在链表中点）
+     *  2.递归的对左半部分进行递归排序
+     *  3.递归的对右半部分进行递归排序
+     *  4.将两个半部分进行合并（merge）
      */
-    public static SinglyLinkedNode reverseList(SinglyLinkedNode head) {
-        SinglyLinkedNode pre = null; //当前节点的上一个节点
-        SinglyLinkedNode next = null; //当前节点的下一个节点
-        while (head != null) {
-            next = head.next;
-            head.next = pre;
-            pre = head;
-            head = next;
+    public static SinglyLinkedNode sortList(SinglyLinkedNode head){
+        if(head == null || head.next == null){//0或1 个就不用做排序了
+            return head;
         }
-        return pre;
+        SinglyLinkedNode mid = getMid(head);
+        SinglyLinkedNode right = mid.next;
+        mid.next = null;//咬断链表
+        SinglyLinkedNode node = mergeTwoList1(sortList(head),sortList(right));
+        return node;
     }
 
 
     /**
-     * 取中间节点（偶数放回取得中间节点的前面那个）
+     * 1.1取中间节点（偶数放回取得中间节点的前面那个）
      * 两个计步器 一个加1， 一个加2  当+2到达结尾时 结束
      *
      * @param head
@@ -50,37 +56,12 @@ public class SinglyLinkedListUtile0 {
         return slow;
     }
 
-    /**
-     * 合并两个有序链表
-     * 0 递归
-     * 1.
-     */
-    public static SinglyLinkedNode mergeTwoList0(SinglyLinkedNode head1, SinglyLinkedNode head2){
-        if(head1 == null && head2 == null){
-            return null;
-        }
-        if(head1 == null){
-            return head2;
-        }
-        if(head2 == null){
-            return head1;
-        }
-        SinglyLinkedNode head = null;
-        if(head1.value > head2.value){
-            head = head2;
-            head.next = mergeTwoList0(head1, head2.next);
-        } else {
-            head = head1;
-            head.next = mergeTwoList0(head1.next, head2);
-        }
-        return head;
-    }
-
 
     /**
-     * 合并两个有序链表
-     * 0 递归
-     * 1.
+     * 4.将两个半部分进行合并（merge）
+     * @param head1
+     * @param head2
+     * @return
      */
     public static SinglyLinkedNode mergeTwoList1(SinglyLinkedNode head1, SinglyLinkedNode head2){
         if(head1 == null || head2 == null){
@@ -107,5 +88,4 @@ public class SinglyLinkedListUtile0 {
         pre.next = curl == null ? cur2 : curl;
         return head;
     }
-
 }
