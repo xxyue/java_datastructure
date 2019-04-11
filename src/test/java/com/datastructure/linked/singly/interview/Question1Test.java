@@ -1,8 +1,8 @@
-package test.java.com.datastructure.list.linked.singly.interview;
+package test.java.com.datastructure.linked.singly.interview;
 
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedList0;
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
-import main.java.com.datastructure.list.linked.singly.interview.Question1;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedList0;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
+import main.java.com.datastructure.linked.singly.interview.Question1;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

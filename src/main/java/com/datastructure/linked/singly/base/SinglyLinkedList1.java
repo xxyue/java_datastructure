@@ -1,4 +1,4 @@
-package main.java.com.datastructure.list.linked.singly.base;
+package main.java.com.datastructure.linked.singly.base;
 
 /**
  * @Description: 单向链表   (只研究数据结构，不考虑类型 安全等其他问题，  以int为例）

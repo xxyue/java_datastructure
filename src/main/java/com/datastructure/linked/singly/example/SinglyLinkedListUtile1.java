@@ -1,7 +1,7 @@
-package main.java.com.datastructure.list.linked.singly.example;
+package main.java.com.datastructure.linked.singly.example;
 
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedList1;
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedList1;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
 
 /**
  * @Description: 单向链表 实例操作

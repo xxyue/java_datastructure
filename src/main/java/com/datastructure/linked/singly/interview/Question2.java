@@ -1,6 +1,6 @@
-package main.java.com.datastructure.list.linked.singly.interview;
+package main.java.com.datastructure.linked.singly.interview;
 
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
 
 /**
  * @Description: 面试真题  单链表归并排序

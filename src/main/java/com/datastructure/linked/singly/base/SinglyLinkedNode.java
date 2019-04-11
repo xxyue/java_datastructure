@@ -1,4 +1,4 @@
-package main.java.com.datastructure.list.linked.singly.base;
+package main.java.com.datastructure.linked.singly.base;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package main.java.com.datastructure.list.linked.two_way.base;
+package main.java.com.datastructure.linked.two_way.base;
 
 /**
  *  双向链表

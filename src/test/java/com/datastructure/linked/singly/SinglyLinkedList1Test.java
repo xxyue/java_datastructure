@@ -1,7 +1,7 @@
-package test.java.com.datastructure.list.linked.singly;
+package test.java.com.datastructure.linked.singly;
 
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedList1;
-import main.java.com.datastructure.list.linked.singly.base.SinglyLinkedNode;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedList1;
+import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
