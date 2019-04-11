@@ -1,4 +1,4 @@
-package main.java.com.datastructure.stack; /**
+package main.java.com.datastructure; /**
  *
  *  栈(Stack)
  *  可以看做一个箱子
@@ -36,7 +36,7 @@ package main.java.com.datastructure.stack; /**
  *      3.广度优先搜索遍历
  *
  *  队列的两种实现 :
- *      静态队列（数组） **
+ *      静态队列（数组） **(MyArrayQueue)
  *      动态队列（链表）
  *              入队
  *              出队
