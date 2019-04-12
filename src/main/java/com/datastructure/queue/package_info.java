@@ -1,4 +1,4 @@
-package main.java.com.datastructure.queue; /**
+ /**
  *
  *  栈(Stack)
  *  可以看做一个箱子
