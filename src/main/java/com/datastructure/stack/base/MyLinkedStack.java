@@ -1,4 +1,4 @@
-package main.java.com.datastructure.stack;
+package main.java.com.datastructure.stack.base;
 
 import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
 

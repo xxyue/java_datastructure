@@ -1,4 +1,4 @@
-package main.java.com.datastructure.queue;
+package main.java.com.datastructure.queue.base;
 
 /**
  * @Description: ${description}

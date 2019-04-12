@@ -2,7 +2,7 @@ package test.java.com.datastructure.stack;
 
 
 import main.java.com.datastructure.linked.singly.base.SinglyLinkedNode;
-import main.java.com.datastructure.stack.MyLinkedStack;
+import main.java.com.datastructure.stack.base.MyLinkedStack;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

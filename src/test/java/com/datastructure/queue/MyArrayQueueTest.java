@@ -1,7 +1,7 @@
 package test.java.com.datastructure.queue;
 
 
-import main.java.com.datastructure.queue.MyArrayQueue;
+import main.java.com.datastructure.queue.base.MyArrayQueue;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

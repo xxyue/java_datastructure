@@ -46,9 +46,14 @@ package main.java.com.datastructure; /**
  *
  *
  *
+ *    实战
+ *      两个栈实现一个队列
  *
+ *      必须实现两个点：
+ *      1.如果stackPush 要往stackPop中压数据，必须一次性把stackPush 中的数据全部要入
+ *      2.如果stackPop不为空，stackPush绝不能想stackPop中压入数据
  *
- *
+ * *
  *
  *
  *
