@@ -1,4 +1,4 @@
-package test.java.com.datastructure.tree;
+package test.java.com.datastructure.tree.base;
 
 import main.java.com.datastructure.tree.base.MyTree;
 import main.java.com.datastructure.tree.base.TreeNode;
