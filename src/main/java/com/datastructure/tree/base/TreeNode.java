@@ -1,4 +1,4 @@
-package main.java.com.datastructure.tree;
+package main.java.com.datastructure.tree.base;
 
 /**
  * @Description: 树的节点

@@ -1,4 +1,4 @@
-package main.java.com.datastructure.tree;
+package main.java.com.datastructure.tree.base;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

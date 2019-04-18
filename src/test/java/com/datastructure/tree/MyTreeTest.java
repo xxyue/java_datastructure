@@ -1,11 +1,9 @@
 package test.java.com.datastructure.tree;
 
-import main.java.com.datastructure.tree.MyTree;
-import main.java.com.datastructure.tree.TreeNode;
+import main.java.com.datastructure.tree.base.MyTree;
+import main.java.com.datastructure.tree.base.TreeNode;
 import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @Description: ${description}
